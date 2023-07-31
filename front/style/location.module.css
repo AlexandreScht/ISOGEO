@@ -1,0 +1,84 @@
+#body{
+  width: 100%;
+  padding: 4em 5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary);
+}
+
+#contender{
+  width: 100%;
+  display: grid;
+  margin-top: 4em;
+  grid-template-columns: 1fr 5fr;
+  gap: 0 5%;
+}
+
+.subContender{
+  border: var(--border) 0.15em;
+  box-shadow: 0.1em 0.1em 0.2em var(--shadow_color);
+  border-radius: 0.75em;
+  padding: 0.5em 1.5em 1em;
+}
+.subContender:first-child{
+  height: 30em;
+  position: fixed;
+  width: 17em;
+}
+.subContender:first-child h2{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#rangeContender{
+  margin-top: 4em;
+}
+
+#rangeContender span{
+  font-size: 1.2em;
+}
+
+#rangeContender div{
+  margin-top: 1em;
+}
+.horizontal_slider{
+  margin-bottom: 6em;
+}
+.track_range{
+  background: var(--primary);
+  margin-right: 2em;
+  height: 0.5em;
+}
+.track_range:first-child, .track_range:nth-child(3){
+  background: rgb(219, 219, 219);
+}
+
+.track_range:nth-child(3){
+  margin-right: 2em;
+}
+
+.thumb_range{
+  cursor: pointer;
+  border: var(--border) 0.15em;
+  transform: translateX(-50%);
+  min-width: 2em;
+  text-align: center;
+  padding: 0 0.5em;
+  z-index: 0 !important;
+}
+
+.thumb_range:nth-child(4){
+  top: -1.9em !important;
+}
+.thumb_range:nth-child(5){
+  bottom: -3.45em !important;
+}
+
+#sportSort{
+  width: 100%;
+  padding: 0.2em 0.5em;
+  margin-top: 1em;
+}
+

@@ -1,0 +1,42 @@
+#sportSort{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#sportSort input{
+  width: 20%;
+  margin-bottom: 1em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.35em;
+  font-size: 1.2em;
+}
+
+.letterTitle{
+  font-weight: bold;
+  font-size: 3em;
+  margin: 0.5em 0 0.15em 5%;
+}
+
+.sportsContender {
+  margin-left: 5%;
+  display: flex;
+  gap: 0.8em 1em;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.sportName {
+  text-align: center;
+  font-size: 1.5em;
+  width: fit-content;
+  border: var(--border) 0.09em;
+  padding: 0.1em 0.5em 0.15em;
+  border-radius: 0.25em;
+  color: var(--primary);
+  cursor: default;
+}
+.sportName:hover{
+  border-color: var(--primaryHovered);
+}

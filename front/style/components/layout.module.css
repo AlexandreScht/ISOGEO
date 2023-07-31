@@ -1,0 +1,76 @@
+
+.header {
+  width: 100%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+.headerLink{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 0.6em 0 1em 2%;
+}
+
+.header input{
+  display: none;
+}
+
+.header label {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  z-index: 2;
+  color: var(--secondary);
+  text-transform: uppercase;
+  padding: 0.25em 0;
+}
+
+.header label:hover {
+  cursor: pointer;
+  color: var(--primaryHovered);
+}
+
+#bgSelector {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  border: 0.1em solid var(--grey);
+  transition: 0.5s;
+  border-radius: 0.65em;
+}
+
+.header label:has(input:checked) {
+  font-weight: bold;
+}
+
+.headerLink:has(.rad0:checked) > #bgSelector{
+height: 110%;
+width: 15.75%;
+transform: translateX(14%);
+}
+
+.headerLink:has(.rad1:checked) > #bgSelector{
+height: 110%;
+width: 28.5%;
+transform: translateX(80%);
+}
+.headerLink:has(.rad2:checked) > #bgSelector{
+height: 110%;
+width: 15.75%;
+transform: translateX(350%);
+}
+.headerLink:has(.rad3:checked) > #bgSelector{
+height: 110%;
+width: 22.5%;
+transform: translateX(332.5%);
+}

@@ -1,0 +1,24 @@
+:root {
+  --primary: rgb(49, 49, 49);
+  --secondary: #F6F6F6;
+  --primaryHovered: rgb(237, 186, 119);
+  --grey: #bababa;
+  --error: rgb(183, 0, 0);
+  --disabled: rgb(165, 165, 165);
+  --border: solid rgb(165, 165, 165);
+  --shadow_color: rgba(0, 0, 0, 0.2);
+}
+
+#errorText{
+  width: 100%;
+    padding-top: 38vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--error);
+}
+
+.title{
+  text-align: center;
+  margin: 1.5em 0;
+}

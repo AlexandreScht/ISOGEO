@@ -1,0 +1,22 @@
+#findAccessibility {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#lineSelect {
+  width: 20%;
+  margin-bottom: 1em;
+  border-radius: 0.35em;
+  font-size: 1.2em;
+}
+
+#contender{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#stadeContender{
+  width: 30%;
+}
