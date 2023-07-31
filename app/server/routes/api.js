@@ -1,8 +1,8 @@
 const express = require("express")
-import config from "../config"
 var superagent = require("superagent")
 const router = express.Router()
 const auth = require("../auth.js")
+const config = require("../config")
 
 router.get("/getSports", (req, res) => {
   // When querying /getSports in this app

@@ -1,7 +1,4 @@
-import dotenv from "dotenv"
-import { resolve } from "path"
-
-dotenv.config({ path: resolve(".env.local") })
+require("dotenv").config()
 
 const config = {
   params: {
@@ -11,4 +8,4 @@ const config = {
   },
 }
 
-export default config
+module.exports = config
